@@ -1,0 +1,123 @@
+div h5
+{
+    color: red;
+    text-align: center;
+}
+div > h2
+{
+    text-align: center;
+}
+.flex{
+    display: flex;
+   margin-left:300px;  
+}
+div > img{
+    padding-left: 40px;
+    widows: 250px;
+  
+}
+.date {
+    display: flex;
+  margin-left: 240px;
+  color: grey;
+}
+.p_1{
+    margin-left: 230px;
+}
+ #h4{
+    margin-left: 240px;
+    display: flex;
+}
+.h4_1{
+    margin-left: 170px;
+}
+div h4{
+    margin-top: 0px;
+}
+div button{
+    background-color: orangered;
+    color: white;
+    height: 30px;
+    margin-left: 550px;
+    width: 200px;
+}
+#id1{
+    text-align: center;
+    color: grey;
+}
+#id2{
+   text-align: center;
+    margin-top: -10px;
+    color: grey;
+}
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto;
+    width:100%;
+    margin-left: 50px;
+
+}
+div h3, img{
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#id3{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#id4{
+    margin-left: 120px;
+    margin-top: -12px;
+}
+.text p,h4{
+ margin-left: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+   
+    .flex{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+  .button{
+            margin-left: 100px;
+            margin-top: 20px;
+  }
+#grid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 0px;
+}
+div h4{
+    margin-top: 10px;
+}
+
+
+}
+@media only screen and (max-width: 600px) {
+    
+    .flex{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+  .button{
+            margin-left: 100px;
+            margin-top: 20px;
+  }
+#grid{
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+div h4{
+    margin-top: 10px;
+}
+
+
+}
