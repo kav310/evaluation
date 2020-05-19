@@ -1,0 +1,30 @@
+.content {
+    padding: 20px;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 20%;
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 20px;
+    background-color: black;
+    border: black;
+    color: whitesmoke;
+  }
+  h1 {
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .card {
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
