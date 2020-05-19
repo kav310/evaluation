@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#nameDiv{
+    margin-top: 50px;
+}
+.input{
+    font-size: 25px;
+    color:red;
+    font-weight: 500;
+    margin: 20px;
+}
+#name,#age,#science,#math,#english{
+    width: 10%;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: black;
+    border: black;
+    color: honeydew;
+    box-shadow: 0 2px 2px 0 black;
+    margin: 10px;
+    border-radius: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 50px auto;
+    background: burlywood;
+}
+table, th, td{
+    border: 2px solid black;
+    padding: 5px;
+}
+th{
+    font-size: 25px;
+    font-weight: 500;
+}
+td{
+    font-size: 20px;
+    font-weight: 300px;
+}

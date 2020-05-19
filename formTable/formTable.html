@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display In Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="nameDiv" class="input">Name:<input id="name" type="name" placeholder="Enter Name"/></div>
+        <div class="input">Age:<input id="age" type="text" placeholder="Enter Age"/></div>
+        <div class="input">Science Marks:<input id="science" type="text" placeholder="Enter Marks"/></div>
+        <div class="input">English Marks:<input id="english" type="text" placeholder="Enter Marks"/></div>
+        <div class="input">Mathematics Marks:<input id="math" type="text" placeholder="Enter Marks"/></div>
+        <button id="entry">Input Entry</button>
+    </div>
+    <table id="display">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Science Marks</td>
+                    <td>English Marks</td>
+                    <td>Mathematics Marks</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+    </table>
+    <button id="AscendingOrder">Ascending Order</button>
+    <button id="DescendingOrder">Descending Order</button>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
