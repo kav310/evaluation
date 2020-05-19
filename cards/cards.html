@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      .content {
+        padding: 20px;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+      }
+      .card {
+        max-width: 20%;
+        flex: 20%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 20px;
+        background-color: black;
+        border: black;
+        color: whitesmoke;
+      }
+      h1 {
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .card {
+          max-width: 100%;
+          flex: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Cards</h1>
+    </div>
+    <button id="click">Create</button>
+    <script type="text/javascript">
+      var btn = document.getElementById("click");
+      btn.addEventListener("click", display);
+      var count = 1;
+      function display() {
+        var div = document.createElement("div");
+        div.setAttribute("class", "flex");
+        var h1 = document.querySelector("h1");
+        for (var i = count; i < count + 5; i++) {
+          var card = document.createElement("div");
+          card.setAttribute("class", "card");
+          var cardbtn = document.createElement("button");
+          cardbtn.textContent = "Click ";
+          cardbtn.addEventListener("click", function () {
+            h1.textContent = i;
+          });
+          card.textContent = i;
+          card.append(cardbtn);
+          div.append(card);
+        }
+        count += 5;
+        var content = document.querySelector(".content");
+        content.append(div);
+      }
+    </script>
+  </body>
+</html>
